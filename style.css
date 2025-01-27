@@ -1,5 +1,4 @@
-.container {
+.layout-grid-container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
 }

@@ -3,6 +3,60 @@ import alttp from "./js/alttp/main.js"
 
 const usb2snes = new Usb2Snes()
 var updateTimer = null;
+var previous_memory = null;
+
+function init_layout()
+{
+    var inventory_container = document.querySelector("#inventory-container");
+
+    for(var item of alttp.inventory)
+    {
+        const p = document.createElement('p');
+        const title = document.createElement('span');
+        
+        title.id = `inventory-${item.id}-title`;
+        title.textContent = item.name;
+
+        const value = document.createElement('span');
+        
+        value.id = `inventory-${item.id}-value`;
+
+        if(item.type == "state")
+            value.textContent = item.states[0];
+        else if(item.type == "boolean")
+            value.textContent = "No";
+        else if(item.type == "count")
+            value.textContent = "0";
+
+        p.appendChild(title);
+        p.appendChild(document.createTextNode(": "));
+        p.appendChild(value);
+
+        inventory_container.appendChild(p);
+    }
+
+    var checks_container = document.querySelector("#checks-container");
+
+    for(var check of alttp.checks)
+    {
+        const p = document.createElement('p');
+        const title = document.createElement('span');
+        
+        title.id = `check-${check.id}-title`;
+        title.textContent = check.name;
+
+        const value = document.createElement('span');
+        
+        value.id = `check-${check.id}-value`;
+        value.textContent = "No";
+
+        p.appendChild(title);
+        p.appendChild(document.createTextNode(": "));
+        p.appendChild(value);
+
+        checks_container.appendChild(p);
+    }
+}
 
 function disconnect()
 {
@@ -11,7 +65,7 @@ function disconnect()
     usb2snes.disconnect()
     const connect_button = document.querySelector("#connect");
 
-    connect_button.innerHTML = "Connect";
+    connect_button.textContent = "Connect";
     connect_button.onclick = connect;
 }
 
@@ -19,7 +73,7 @@ export async function connect()
 {
     await usb2snes.connect();
     const connect_button = document.querySelector("#connect");
-    connect_button.innerHTML = "Disconnect";
+    connect_button.textContent = "Disconnect";
     connect_button.onclick = disconnect;
 
     const device_list = await usb2snes.request_device_list()
@@ -32,7 +86,7 @@ export async function attach()
     await usb2snes.attach(device);
     const device_info = await usb2snes.get_device_info();
 
-    document.querySelector("#device-info").innerHTML = `${device_info.name} ${device_info.version} running ${device_info.file}`
+    document.querySelector("#device-info").textContent = `${device_info.name} ${device_info.version} running ${device_info.file}`
     await update();
 
     updateTimer = setInterval(update, 5000);
@@ -50,15 +104,15 @@ async function update_inventory()
 
     for(var item of alttp.inventory)
     {
-        const span = document.querySelector(`#inventory-${item.id}`);
+        const span = document.querySelector(`#inventory-${item.id}-value`);
         const value = memory[item.offset]
 
         if(item.type == "state")
-            span.innerHTML = item.states[value];
+            span.textContent = item.states[value];
         else if(item.type == "boolean")
-            span.innerHTML = (value != 0 ? "Yes" : "No");
+            span.textContent = (value != 0 ? "Yes" : "No");
         else if(item.type == "count")
-            span.innerHTML = value;
+            span.textContent = value;
     }
 }
 
@@ -71,8 +125,48 @@ async function update_checks()
         var flag = check_flag(memory, check.offset, check.bit);
         console.log({name: check.name, value: flag});
 
-        document.querySelector(`#check-${check.id}`).innerHTML = flag ? "Yes" : "No";
+        document.querySelector(`#check-${check.id}-value`).textContent = flag ? "Yes" : "No";
     }
+
+    if(previous_memory != null)
+        compare_sram(previous_memory, memory);
+
+    previous_memory = memory;
+}
+
+function compare_sram(prev, cur)
+{
+    var message = "SRAM updates:\n";
+
+    for(var i = 0; i < prev.length; i++)
+    {
+        var previous = prev[i];
+        var current = cur[i];
+
+        // Ignore inventory updates
+        if(i >= 832 && i <= 907)
+        {
+            continue;
+        }
+
+        // Remove addresses that always change
+        if(i == 1070 || i == 1071 || i == 1084 || i == 1086 || i == 1087)
+        {
+            continue;
+        }
+
+        if(previous != current)
+        {
+            message += `${hex(i, 3)}: ${hex(previous, 2)} -> ${hex(current, 2)}\n`
+        }
+    }
+
+    console.log(message);
+}
+
+function hex(input, len)
+{
+    return Number(input).toString(16).toUpperCase().padStart(len, '0');
 }
 
 function check_flag(memory, offset, bit)
@@ -108,7 +202,7 @@ function populate_device_list(device_list)
         {
             const option = document.createElement('option');
             option.value = device;
-            option.innerHTML = device;
+            option.textContent = device;
             device_select.options.add(option);
         }
 
@@ -118,7 +212,7 @@ function populate_device_list(device_list)
     else
     {
         const option = document.createElement('option');
-        option.innerHTML = "No device available";
+        option.textContent = "No device available";
         device_select.options.add(option);
 
         device_select.disabled = true;
@@ -126,4 +220,4 @@ function populate_device_list(device_list)
     }
 }
 
-export default { connect, attach, update }
+export default { connect, attach, update, init_layout }

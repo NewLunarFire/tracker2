@@ -11,9 +11,6 @@
         <fieldset>
             <legend>(Q)USB2SNES</legend>
             <button id="connect" onClick="connect()">Connect</button>
-            <!--
-            <button onClick="disconnect()">Disconnect</button>
-            -->
 
             <label for="device-select">Device select:</label>
 
@@ -26,25 +23,24 @@
             <p>Device: <span id="device-info"></span></p>
         </fieldset>
         
-        <button onclick="update()">Update</button>
+        <!-- <button onclick="update()">Update</button> -->
+        <div class="layout-grid-container">
+            <div>
+                <fieldset id="inventory-container">
+                    <legend>Inventory</legend>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset id="checks-container">
+                    <legend>Checks</legend>
+                </fieldset>
+            </div>
+        </div>
 
-        <h2>Inventory</h2>
-        <p>Bow: <span id="inventory-bow">None</span></p>
-        <p>Boomerang: <span id="inventory-boomerang">None</span></p>
-        <p>Hookshot: <span id="inventory-hookshot">None</span></p>
-        <p>Bombs: <span id="inventory-bombs">None</span></p>
-        <p>Magic Powder: <span id="inventory-magic-powder">None</span></p>
-        
-        <h2>Checks</h2>
-        <p>Link's House: <span id="check-link-house">No</span></p>
-        <p>Uncle: <span id="check-uncle">No</span></p>
-        <p>Secret Passage: <span id="check-secret-passage">No</span></p>
-
-        <script type="text/javascript" src="script.js"></script>
         <script type="module">
-            //import { Usb2Snes } from "./js/usb2snes.js"
             import tracker from "./tracker.js"
             
+            tracker.init_layout();
             window.tracker = tracker;
             window.connect = tracker.connect;
             window.device_attach = tracker.attach;
