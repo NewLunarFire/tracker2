@@ -5,7 +5,7 @@ The layout for the base game can be seen here: http://alttp.run/hacking/index.ph
 
 ## SRAM layout
 ### Checks
-
+#### Light World
 
 <table>
     <thead>
@@ -17,9 +17,22 @@ The layout for the base game can be seen here: http://alttp.run/hacking/index.ph
     </thead>
     <tbody>
         <tr>
+            <th rowspan="3">$022</th>
+            <th>4</th>
+            <th>Sewers - Secret Room - Left</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>Sewers - Secret Room - Middle</th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>Sewers - Secret Room - Right</th>
+        </tr>
+        <tr>
             <th>$024</th>
             <th>4</th>
-            <th>Sanctuary chest</th>
+            <th>Sanctuary</th>
         </tr>
         <tr>
             <th rowspan="4">$05E</th>
@@ -49,6 +62,19 @@ The layout for the base game can be seen here: http://alttp.run/hacking/index.ph
             <th>Kakariko Tavern</th>
         </tr>
         <tr>
+            <th rowspan="3">$20A</th>
+            <th>4</th>
+            <th>Sahasrahla's Hut - Left</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>Sahasrahla's Hut - Middle</th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>Sahasrahla's Hut - Right</th>
+        </tr>
+        <tr>
             <th>$210</th>
             <th>4</th>
             <th>Chicken House</th>
@@ -57,6 +83,15 @@ The layout for the base game can be seen here: http://alttp.run/hacking/index.ph
             <th>$214</th>
             <th>4</th>
             <th>Aginah's Cave</th>
+        </tr>
+        <tr>
+            <th rowspan="2">$228</th>
+            <th>4</th>
+            <th>Waterfall Fairy Left</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>Waterfall Fairy Right</th>
         </tr>
         <tr>
             <th rowspan="4">$23A</th>
@@ -113,9 +148,28 @@ The layout for the base game can be seen here: http://alttp.run/hacking/index.ph
             <th>Running Game</th>
         </tr>
         <tr>
+            <th>$2AA</th>
+            <th>6</th>
+            <th>Flute Spot</th>
+        </tr>
+        <tr>
+            <th>$301</th>
+            <th>6</th>
+            <th>Zora Ledge</th>
+        </tr>
+        <tr>
             <th>$395</th>
             <th>1</th>
             <th>Mini Moldorm Cave - Generous Guy</th>
+        </tr>
+        <tr>
+            <th rowspan="2">$3C9</th>
+            <th>0</th>
+            <th>Hobo</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Bottle Merchant</th>
         </tr>
     </tbody>
 </table>

@@ -1,6 +1,7 @@
 export class Usb2Snes {
     constructor() {
         this.url = "ws://localhost:8080";
+        this.log = false;
     }
 
     connect()
@@ -10,7 +11,7 @@ export class Usb2Snes {
             const ws = that.ws = new WebSocket("ws://localhost:8080");
             ws.binaryType = "arraybuffer";
             ws.onmessage = (event) => {
-                console.log("Received from websocket", event);
+                this.log("Received from websocket", event);
         
                 if(that.next_handler != null)
                     that.next_handler(event);
@@ -19,7 +20,7 @@ export class Usb2Snes {
             };
 
             ws.onopen = (event) => {
-                console.log("WS Open", event);
+                this.log("WS Open", event);
                 resolve(event);
             }
         })
@@ -39,6 +40,12 @@ export class Usb2Snes {
         }
     }
     
+    log()
+    {
+        if(this.log)
+            console.log(arguments)
+    }
+
     request_device_list()
     {
         return this.ws_send_promise({
@@ -97,7 +104,7 @@ export class Usb2Snes {
     ws_send(command, handler = null)
     {
         var text = command;
-        console.log("Sending to websocket", command);
+        this.log("Sending to websocket", command);
         if (typeof(command) == "object")
             text = JSON.stringify(command);
         

@@ -37,24 +37,36 @@ function init_layout()
 
     var checks_container = document.querySelector("#checks-container");
 
-    for(var check of alttp.checks)
+    var checks_by_map = Object.groupBy(alttp.checks, check => check.map);
+
+    for(var map in checks_by_map)
     {
-        const p = document.createElement('p');
-        const title = document.createElement('span');
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        summary.textContent = map;
+        details.appendChild(summary);
         
-        title.id = `check-${check.id}-title`;
-        title.textContent = check.name;
+        for(var check of checks_by_map[map])
+        {
+            const p = document.createElement('p');
+            const title = document.createElement('span');
+            
+            title.id = `check-${check.id}-title`;
+            title.textContent = check.name;
 
-        const value = document.createElement('span');
-        
-        value.id = `check-${check.id}-value`;
-        value.textContent = "No";
+            const value = document.createElement('span');
+            
+            value.id = `check-${check.id}-value`;
+            value.textContent = "No";
 
-        p.appendChild(title);
-        p.appendChild(document.createTextNode(": "));
-        p.appendChild(value);
+            p.appendChild(title);
+            p.appendChild(document.createTextNode(": "));
+            p.appendChild(value);
 
-        checks_container.appendChild(p);
+            details.appendChild(p);
+        }
+
+        checks_container.appendChild(details);
     }
 }
 
