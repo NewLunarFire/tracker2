@@ -1,7 +1,7 @@
 export class Usb2Snes {
     constructor() {
         this.url = "ws://localhost:8080";
-        this.log = false;
+        this.log_events = false;
     }
 
     connect()
@@ -20,7 +20,7 @@ export class Usb2Snes {
             };
 
             ws.onopen = (event) => {
-                this.log("WS Open", event);
+                that.log("WS Open", event);
                 resolve(event);
             }
         })
@@ -42,7 +42,7 @@ export class Usb2Snes {
     
     log()
     {
-        if(this.log)
+        if(this.log_events)
             console.log(arguments)
     }
 

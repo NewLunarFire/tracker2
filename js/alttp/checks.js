@@ -680,5 +680,1105 @@ export default [
         "map": "darkworld",
         "offset": null,
         "bit": null
+    },
+
+    // Hyrule Castle
+    {
+        "id": "hyrule-castle-big-key-drop",
+        "map": "hyrule-castle",
+        "name": "Hyrule Castle - Big Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "hyrule-castle-boomerang-chest",
+        "map": "hyrule-castle",
+        "name": "Hyrule Castle - Boomerang Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "hyrule-castle-boomerang-guard-key-drop",
+        "map": "hyrule-castle",
+        "name": "Hyrule Castle - Boomerang Guard Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "hyrule-castle-map-chest",
+        "map": "hyrule-castle",
+        "name": "Hyrule Castle - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "hyrule-castle-map-guard-key-drop",
+        "map": "hyrule-castle",
+        "name": "Hyrule Castle - Map Guard Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "hyrule-castle-zelda-chest",
+        "map": "hyrule-castle",
+        "name": "Hyrule Castle - Zelda\'s Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "sanctuary",
+        "map": "hyrule-castle",
+        "name": "Sanctuary",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "sewers-dark-cross",
+        "map": "hyrule-castle",
+        "name": "Sewers - Dark Cross",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "sewers-key-rat-key-drop",
+        "map": "hyrule-castle",
+        "name": "Sewers - Key Rat Key Drop",
+        "offset": null,
+        "bit": null
+    },
+
+    // Castle Tower
+    {
+        "id": "castle-tower-circle-of-pots-key-drop",
+        "map": "castle-tower",
+        "name": "Castle Tower - Circle of Pots Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "castle-tower-dark-archer-key-drop",
+        "map": "castle-tower",
+        "name": "Castle Tower - Dark Archer Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "castle-tower-dark-maze",
+        "map": "castle-tower",
+        "name": "Castle Tower - Dark Maze",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "castle-tower-room-03",
+        "map": "castle-tower",
+        "name": "Castle Tower - Room 03",
+        "offset": null,
+        "bit": null
+    },
+
+    // Eastern Palace
+
+    {
+        "id": "eastern-palace-big-chest",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "eastern-palace-big-key-chest",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "eastern-palace-boss",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "eastern-palace-cannonball-chest",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Cannonball Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "eastern-palace-compass-chest",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "eastern-palace-dark-eyegore-key-drop",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Dark Eyegore Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "eastern-palace-dark-square-pot-key",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Dark Square Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "eastern-palace-map-chest",
+        "map": "eastern-palace",
+        "name": "Eastern Palace - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+
+    // Deset Palace
+    {
+        "id": "desert-palace-beamos-hall-pot-key",
+        "map": "desert-palace",
+        "name": "Desert Palace - Beamos Hall Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-big-chest",
+        "map": "desert-palace",
+        "name": "Desert Palace - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-big-key-chest",
+        "map": "desert-palace",
+        "name": "Desert Palace - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-boss",
+        "map": "desert-palace",
+        "name": "Desert Palace - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-compass-chest",
+        "map": "desert-palace",
+        "name": "Desert Palace - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-desert-tiles-1-pot-key",
+        "map": "desert-palace",
+        "name": "Desert Palace - Desert Tiles 1 Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-desert-tiles-2-pot-key",
+        "map": "desert-palace",
+        "name": "Desert Palace - Desert Tiles 2 Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-map-chest",
+        "map": "desert-palace",
+        "name": "Desert Palace - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "desert-palace-torch",
+        "map": "desert-palace",
+        "name": "Desert Palace - Torch",
+        "offset": null,
+        "bit": null
+    },
+
+    // Tower of Hera
+    {
+        "id": "tower-of-hera-basement-cage",
+        "map": "tower-hera",
+        "name": "Tower of Hera - Basement Cage",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "tower-of-hera-big-chest",
+        "map": "tower-hera",
+        "name": "Tower of Hera - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "tower-of-hera-big-key-chest",
+        "map": "tower-hera",
+        "name": "Tower of Hera - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "tower-of-hera-boss",
+        "map": "tower-hera",
+        "name": "Tower of Hera - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "tower-of-hera-compass-chest",
+        "map": "tower-hera",
+        "name": "Tower of Hera - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "tower-of-hera-map-chest",
+        "map": "tower-hera",
+        "name": "Tower of Hera - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+
+    // Palace of Darkness
+    {
+        "id": "palace-of-darkness-big-chest",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-big-key-chest",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-boss",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-compass-chest",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-dark-basement-left",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Dark Basement - Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-dark-basement-right",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Dark Basement - Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-dark-maze-bottom",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Dark Maze - Bottom",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-dark-maze-top",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Dark Maze - Top",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-harmless-hellway",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Harmless Hellway",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-map-chest",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-shooter-room",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Shooter Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-stalfos-basement",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - Stalfos Basement",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-the-arena-bridge",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - The Arena - Bridge",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "palace-of-darkness-the-arena-ledge",
+        "map": "palace-darkness",
+        "name": "Palace of Darkness - The Arena - Ledge",
+        "offset": null,
+        "bit": null
+    },
+
+    // Swamp Palace
+    {
+        "id": "swamp-palace-big-chest",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-big-key-chest",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-boss",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-compass-chest",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-entrance",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Entrance",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-flooded-room-left",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Flooded Room - Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-flooded-room-right",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Flooded Room - Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-hookshot-pot-key",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Hookshot Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-map-chest",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-pot-row-pot-key",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Pot Row Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-trench-1-pot-key",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Trench 1 Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-trench-2-pot-key",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Trench 2 Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-waterfall-room",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Waterfall Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-waterway-pot-key",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - Waterway Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "swamp-palace-west-chest",
+        "map": "swamp-palace",
+        "name": "Swamp Palace - West Chest",
+        "offset": null,
+        "bit": null
+    },
+
+    // Thieves's Town
+    {
+        "id": "thieves-town-ambush-chest",
+        "map": "thieves-town",
+        "name": "thieves Town - Ambush Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-attic",
+        "map": "thieves-town",
+        "name": "thieves Town - Attic",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-big-chest",
+        "map": "thieves-town",
+        "name": "thieves Town - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-big-key-chest",
+        "map": "thieves-town",
+        "name": "thieves Town - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-blind-cell",
+        "map": "thieves-town",
+        "name": "thieves Town - Blind's Cell",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-boss",
+        "map": "thieves-town",
+        "name": "thieves Town - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-compass-chest",
+        "map": "thieves-town",
+        "name": "thieves Town - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-hallway-pot-key",
+        "map": "thieves-town",
+        "name": "thieves Town - Hallway Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-map-chest",
+        "map": "thieves-town",
+        "name": "thieves Town - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "thieves-town-spike-switch-pot-key",
+        "map": "thieves-town",
+        "name": "thieves Town - Spike Switch Pot Key",
+        "offset": null,
+        "bit": null
+    },
+
+    // Skull Woods
+    {
+        "id": "skull-woods-big-chest",
+        "map": "skull-woods",
+        "name": "Skull Woods - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-big-key-chest",
+        "map": "skull-woods",
+        "name": "Skull Woods - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-boss",
+        "map": "skull-woods",
+        "name": "Skull Woods - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-bridge-room",
+        "map": "skull-woods",
+        "name": "Skull Woods - Bridge Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-compass-chest",
+        "map": "skull-woods",
+        "name": "Skull Woods - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-map-chest",
+        "map": "skull-woods",
+        "name": "Skull Woods - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-pinball-room",
+        "map": "skull-woods",
+        "name": "Skull Woods - Pinball Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-pot-prison",
+        "map": "skull-woods",
+        "name": "Skull Woods - Pot Prison",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-spike-corner-key-drop",
+        "map": "skull-woods",
+        "name": "Skull Woods - Spike Corner Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "skull-woods-west-lobby-pot-key",
+        "map": "skull-woods",
+        "name": "Skull Woods - West Lobby Pot Key",
+        "offset": null,
+        "bit": null
+    },
+
+    // Ice Palace
+    {
+        "id": "ice-palace-big-chest",
+        "map": "ice-palace",
+        "name": "Ice Palace - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-big-key-chest",
+        "map": "ice-palace",
+        "name": "Ice Palace - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-boss",
+        "map": "ice-palace",
+        "name": "Ice Palace - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-compass-chest",
+        "map": "ice-palace",
+        "name": "Ice Palace - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-conveyor-key-drop",
+        "map": "ice-palace",
+        "name": "Ice Palace - Conveyor Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-freezor-chest",
+        "map": "ice-palace",
+        "name": "Ice Palace - Freezor Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-hammer-block-key-drop",
+        "map": "ice-palace",
+        "name": "Ice Palace - Hammer Block Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-iced-t-room",
+        "map": "ice-palace",
+        "name": "Ice Palace - Iced T Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-jelly-key-drop",
+        "map": "ice-palace",
+        "name": "Ice Palace - Jelly Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-many-pots-pot-key",
+        "map": "ice-palace",
+        "name": "Ice Palace - Many Pots Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-map-chest",
+        "map": "ice-palace",
+        "name": "Ice Palace - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ice-palace-spike-room",
+        "map": "ice-palace",
+        "name": "Ice Palace - Spike Room",
+        "offset": null,
+        "bit": null
+    },
+
+    // Misery Mire
+    {
+        "id": "misery-mire-big-chest",
+        "map": "misery-mire",
+        "name": "Misery Mire - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-big-key-chest",
+        "map": "misery-mire",
+        "name": "Misery Mire - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-boss",
+        "map": "misery-mire",
+        "name": "Misery Mire - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-bridge-chest",
+        "map": "misery-mire",
+        "name": "Misery Mire - Bridge Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-compass-chest",
+        "map": "misery-mire",
+        "name": "Misery Mire - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-conveyor-crystal-key-drop",
+        "map": "misery-mire",
+        "name": "Misery Mire - Conveyor Crystal Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-fishbone-pot-key",
+        "map": "misery-mire",
+        "name": "Misery Mire - Fishbone Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-main-lobby",
+        "map": "misery-mire",
+        "name": "Misery Mire - Main Lobby",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-map-chest",
+        "map": "misery-mire",
+        "name": "Misery Mire - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-spike-chest",
+        "map": "misery-mire",
+        "name": "Misery Mire - Spike Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "misery-mire-spikes-pot-key",
+        "map": "misery-mire",
+        "name": "Misery Mire - Spikes Pot Key",
+        "offset": null,
+        "bit": null
+    },
+
+    // Turtle Rock
+    {
+        "id": "turtle-rock-big-chest",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-big-key-chest",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-boss",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Boss",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-chain-chomps",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Chain Chomps",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-compass-chest",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Compass Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-crystaroller-room",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Crystaroller Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-eye-bridge-bottom-left",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Eye Bridge - Bottom Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-eye-bridge-bottom-right",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Eye Bridge - Bottom Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-eye-bridge-top-left",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Eye Bridge - Top Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-eye-bridge-top-right",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Eye Bridge - Top Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-pokey-1-key-drop",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Pokey 1 Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-pokey-2-key-drop",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Pokey 2 Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-roller-room-left",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Roller Room - Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "turtle-rock-roller-room-right",
+        "map": "turtle-rock",
+        "name": "Turtle Rock - Roller Room - Right",
+        "offset": null,
+        "bit": null
+    },
+
+    // Ganon's Tower
+    {
+        "id": "ganon-tower-big-chest",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Big Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-big-key-chest",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Big Key Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-big-key-room-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Big Key Room - Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-big-key-room-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Big Key Room - Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-bob-chest",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Bob's Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-bob-torch",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Bob's Torch",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-compass-room-bottom-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Compass Room - Bottom Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-compass-room-bottom-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Compass Room - Bottom Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-compass-room-top-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Compass Room - Top Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-compass-room-top-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Compass Room - Top Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-conveyor-cross-pot-key",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Conveyor Cross Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-conveyor-star-pits-pot-key",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Conveyor Star Pits Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-dms-room-bottom-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - DMs Room - Bottom Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-dms-room-bottom-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - DMs Room - Bottom Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-dms-room-top-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - DMs Room - Top Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-dms-room-top-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - DMs Room - Top Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-double-switch-pot-key",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Double Switch Pot Key",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-firesnake-room",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Firesnake Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-hope-room-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Hope Room - Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-hope-room-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Hope Room - Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-map-chest",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Map Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-mini-helmasaur-key-drop",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Mini Helmasaur Key Drop",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-mini-helmasaur-room-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Mini Helmasaur Room - Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-mini-helmasaur-room-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Mini Helmasaur Room - Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-pre-moldorm-chest",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Pre-Moldorm Chest",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-randomizer-room-bottom-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Randomizer Room - Bottom Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-randomizer-room-bottom-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Randomizer Room - Bottom Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-randomizer-room-top-left",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Randomizer Room - Top Left",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-randomizer-room-top-right",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Randomizer Room - Top Right",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-tile-room",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Tile Room",
+        "offset": null,
+        "bit": null
+    },
+    {
+        "id": "ganon-tower-validation-chest",
+        "map": "ganon-tower",
+        "name": "Ganon's Tower - Validation Chest",
+        "offset": null,
+        "bit": null
     }
+
+
 ];

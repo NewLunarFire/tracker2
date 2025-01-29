@@ -38,9 +38,14 @@
         </div>
 
         <script type="module">
-            import tracker from "./tracker.js"
-            
+            import { Usb2Snes } from "./js/usb2snes.js"
+            import Alttp from "./js/alttp/main.js"
+            import Tracker from "./tracker.js"
+
+            const usb2snes = new Usb2Snes()
+            const tracker = new Tracker(new Alttp(usb2snes), usb2snes)
             tracker.init_layout();
+
             window.tracker = tracker;
             window.connect = tracker.connect;
             window.device_attach = tracker.attach;
