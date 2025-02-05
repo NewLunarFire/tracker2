@@ -28,7 +28,13 @@
             <div>
                 <fieldset id="inventory-container">
                     <legend>Inventory</legend>
+                    <img src="1x1.png" style="width: 32px; height: 48px; display: inline-block; background: url(alttp/img/sprites-items.png) -410px -281px"></img>
+                    <img src="1x1.png" style="width: 32px; height: 48px; display: inline-block; background: url(alttp/img/sprites-items.png) -360px -281px"></img>
                 </fieldset>
+            </div>
+            <div class="stack-container">
+                <svg width="1000" height="1000" class="stack-overlay" id="map-svg"></svg>
+                <img class="stack-bg" src="alttp/img/lightworld.png"/>
             </div>
             <div>
                 <fieldset id="checks-container">
@@ -39,8 +45,8 @@
 
         <script type="module">
             import { Usb2Snes } from "./js/usb2snes.js"
-            import Alttp from "./js/alttp/main.js"
-            import Tracker from "./tracker.js"
+            import Alttp from "./alttp/js/main.js"
+            import Tracker from "./js/tracker.js"
 
             const usb2snes = new Usb2Snes()
             const tracker = new Tracker(new Alttp(usb2snes), usb2snes)

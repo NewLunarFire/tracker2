@@ -1,5 +1,6 @@
 import checks from "./checks.js"
 import inventory from "./inventory.js";
+import maps from "./maps.js"
 
 function hex(input, len)
 {
@@ -26,6 +27,11 @@ export default class Alttp {
     get_inventory()
     {
         return inventory;
+    }
+
+    get_maps()
+    {
+        return maps;
     }
 
     async read_sram()

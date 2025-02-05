@@ -1,3 +1,5 @@
+import map_view from "./map_view.js"
+
 export default class Tracker
 {
     constructor(plugin, snes)
@@ -11,6 +13,13 @@ export default class Tracker
     }
 
     init_layout()
+    {
+        this.#display_inventory();
+        this.#display_checks();
+        this.#display_map();
+    }
+
+    #display_inventory()
     {
         var inventory_container = document.querySelector("#inventory-container");
 
@@ -39,7 +48,10 @@ export default class Tracker
 
             inventory_container.appendChild(p);
         }
+    }
 
+    #display_checks()
+    {
         var checks_container = document.querySelector("#checks-container");
 
         var checks = this.plugin.get_checks()
@@ -76,9 +88,20 @@ export default class Tracker
         }
     }
 
+    #display_map()
+    {
+        const map_svg = document.querySelector("#map-svg")
+        const maps = this.plugin.get_maps();
+
+        for(const location of maps["lightworld"].locations)
+        {
+            map_view.draw_location_box(location, map_svg);
+        }
+    }
+
     disconnect()
     {
-        clearInterval(updateTimer);
+        clearInterval(this.updateTimer);
 
         this.snes.disconnect()
         const connect_button = document.querySelector("#connect");
@@ -92,7 +115,7 @@ export default class Tracker
         await this.snes.connect();
         const connect_button = document.querySelector("#connect");
         connect_button.textContent = "Disconnect";
-        connect_button.onclick = this.disconnect;
+        connect_button.onclick = this.disconnect.bind(this);
 
         const device_list = await this.snes.request_device_list()
         this.populate_device_list(device_list);

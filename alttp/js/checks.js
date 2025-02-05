@@ -26,7 +26,7 @@ export default [
         "name": "Blind's Hideout - Far Right",
         "map": "lightworld",
         "offset": 0x23B,
-        "bit": 1
+        "bit": 0
     },
     {
         "id": "blind-hideout-left",
@@ -193,8 +193,8 @@ export default [
         "id": "king-zora",
         "name": "King Zora",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x410,
+        "bit": 1
     },
     {
         "id": "king-tomb",
@@ -235,8 +235,8 @@ export default [
         "id": "lost-woods-hideout",
         "name": "Lost Woods Hideout",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1C3,
+        "bit": 1
     },
     {
         "id": "lumberjack-tree",
@@ -291,8 +291,8 @@ export default [
         "id": "mini-moldorm-cave-generous-guy",
         "name": "Mini Moldorm Cave - Generous Guy",
         "map": "lightworld",
-        "offset": 0x395,
-        "bit": 0
+        "offset": 0x247,
+        "bit": 2
     },
     {
         "id": "mini-moldorm-cave-left",
@@ -312,71 +312,71 @@ export default [
         "id": "mushroom",
         "name": "Mushroom",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x411,
+        "bit": 4
     },
     {
         "id": "old-man",
         "name": "Old Man",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x410,
+        "bit": 0
     },
     {
         "id": "paradox-cave-lower-far-left",
         "name": "Paradox Cave Lower - Far Left",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1DE,
+        "bit": 4
     },
     {
         "id": "paradox-cave-lower-far-right",
         "name": "Paradox Cave Lower - Far Right",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1DE,
+        "bit": 7
     },
     {
         "id": "paradox-cave-lower-left",
         "name": "Paradox Cave Lower - Left",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1DE,
+        "bit": 5
     },
     {
         "id": "paradox-cave-lower-middle",
         "name": "Paradox Cave Lower - Middle",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1DF,
+        "bit": 0
     },
     {
         "id": "paradox-cave-lower-right",
         "name": "Paradox Cave Lower - Right",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1DE,
+        "bit": 6
     },
     {
         "id": "paradox-cave-upper-left",
         "name": "Paradox Cave Upper - Left",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1FE,
+        "bit": 4
     },
     {
         "id": "paradox-cave-upper-right",
         "name": "Paradox Cave Upper - Right",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1FE,
+        "bit": 5
     },
     {
         "id": "potion-shop",
         "name": "Potion Shop",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x411,
+        "bit": 5
     },
     {
         "id": "purple-chest",
@@ -424,8 +424,10 @@ export default [
         "id": "secret-passage",
         "name": "Secret Passage",
         "map": "lightworld",
-        "offset": 0x38D,
-        "bit": 1
+        "offset": 0xAA,
+        "bit": 4
+        /*"offset": 0x38D,
+        "bit": 1*/
     },
     {
         "id": "sewers-secret-room-left",
@@ -452,15 +454,15 @@ export default [
         "id": "sick-kid",
         "name": "Sick Kid",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x204,
+        "bit": 1
     },
     {
         "id": "spectacle-rock",
         "name": "Spectacle Rock",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1D5,
+        "bit": 2
     },
     {
         "id": "spectacle-rock-cave",
@@ -473,8 +475,8 @@ export default [
         "id": "spiral-cave",
         "name": "Spiral Cave",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1FC,
+        "bit": 4
     },
     {
         "id": "sunken-treasure",
@@ -510,8 +512,8 @@ export default [
         "id": "brewery",
         "name": "Brewery",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x20C,
+        "bit": 4
     },
     {
         "id": "bumper-cave-ledge",
@@ -524,8 +526,8 @@ export default [
         "id": "c-shaped-house",
         "name": "C-Shaped House",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x238,
+        "bit": 4
     },
     {
         "id": "catfish",
@@ -538,15 +540,15 @@ export default [
         "id": "chest-game",
         "name": "Chest Game",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x20D, // 395: 04 -> 05
+        "bit": 2
     },
     {
         "id": "digging-game",
         "name": "Digging Game",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x2E8,
+        "bit": 6
     },
     {
         "id": "hookshot-cave-bottom-left",
@@ -580,36 +582,36 @@ export default [
         "id": "hype-cave-bottom",
         "name": "Hype Cave - Bottom",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x23C,
+        "bit": 7
     },
     {
         "id": "hype-cave-generous-guy",
         "name": "Hype Cave - Generous Guy",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x23D,
+        "bit": 2
     },
     {
         "id": "hype-cave-middle-left",
         "name": "Hype Cave - Middle Left",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x23C,
+        "bit": 6
     },
     {
         "id": "hype-cave-middle-right",
         "name": "Hype Cave - Middle Right",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x23C,
+        "bit": 5
     },
     {
         "id": "hype-cave-top",
         "name": "Hype Cave - Top",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x23C,
+        "bit": 4
     },
     {
         "id": "mire-shed-left",
@@ -636,8 +638,8 @@ export default [
         "id": "pyramid",
         "name": "Pyramid",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x2DB,
+        "bit": 6
     },
     {
         "id": "pyramid-fairy-left",
@@ -664,8 +666,8 @@ export default [
         "id": "stumpy",
         "name": "Stumpy",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x410,
+        "bit": 3
     },
     {
         "id": "superbunny-cave-bottom",
@@ -687,44 +689,45 @@ export default [
         "id": "hyrule-castle-big-key-drop",
         "map": "hyrule-castle",
         "name": "Hyrule Castle - Big Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x101,
+        "bit": 2
     },
     {
         "id": "hyrule-castle-boomerang-chest",
         "map": "hyrule-castle",
         "name": "Hyrule Castle - Boomerang Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0E2,
+        "bit": 4
     },
     {
         "id": "hyrule-castle-boomerang-guard-key-drop",
         "map": "hyrule-castle",
         "name": "Hyrule Castle - Boomerang Guard Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0X0E3,
+        "bit": 2
     },
     {
         "id": "hyrule-castle-map-chest",
         "map": "hyrule-castle",
         "name": "Hyrule Castle - Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0xE4,
+        "bit": 4
     },
     {
         "id": "hyrule-castle-map-guard-key-drop",
         "map": "hyrule-castle",
         "name": "Hyrule Castle - Map Guard Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0xE5,
+        "bit": 2
     },
     {
         "id": "hyrule-castle-zelda-chest",
         "map": "hyrule-castle",
         "name": "Hyrule Castle - Zelda\'s Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x100,
+        "bit": 4
     },
+    /*
     {
         "id": "sanctuary",
         "map": "hyrule-castle",
@@ -732,19 +735,20 @@ export default [
         "offset": null,
         "bit": null
     },
+    */
     {
         "id": "sewers-dark-cross",
         "map": "hyrule-castle",
         "name": "Sewers - Dark Cross",
-        "offset": null,
-        "bit": null
+        "offset": 0x064,
+        "bit": 4
     },
     {
         "id": "sewers-key-rat-key-drop",
         "map": "hyrule-castle",
         "name": "Sewers - Key Rat Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x043,
+        "bit": 2
     },
 
     // Castle Tower
@@ -752,91 +756,90 @@ export default [
         "id": "castle-tower-circle-of-pots-key-drop",
         "map": "castle-tower",
         "name": "Castle Tower - Circle of Pots Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x161,
+        "bit": 2
     },
     {
         "id": "castle-tower-dark-archer-key-drop",
         "map": "castle-tower",
         "name": "Castle Tower - Dark Archer Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x181,
+        "bit": 2
     },
     {
         "id": "castle-tower-dark-maze",
         "map": "castle-tower",
         "name": "Castle Tower - Dark Maze",
-        "offset": null,
-        "bit": null
+        "offset": 0x1A0,
+        "bit": 4
     },
     {
         "id": "castle-tower-room-03",
         "map": "castle-tower",
         "name": "Castle Tower - Room 03",
-        "offset": null,
-        "bit": null
+        "offset": 0x1C0,
+        "bit": 4
     },
 
     // Eastern Palace
-
     {
         "id": "eastern-palace-big-chest",
         "map": "eastern-palace",
         "name": "Eastern Palace - Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 152,
+        "bit": 4
     },
     {
         "id": "eastern-palace-big-key-chest",
         "map": "eastern-palace",
         "name": "Eastern Palace - Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x170,
+        "bit": 4
     },
     {
         "id": "eastern-palace-boss",
         "map": "eastern-palace",
         "name": "Eastern Palace - Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x191,
+        "bit": 3
     },
     {
         "id": "eastern-palace-cannonball-chest",
         "map": "eastern-palace",
         "name": "Eastern Palace - Cannonball Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x172,
+        "bit": 4
     },
     {
         "id": "eastern-palace-compass-chest",
         "map": "eastern-palace",
         "name": "Eastern Palace - Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x150,
+        "bit": 4
     },
     {
         "id": "eastern-palace-dark-eyegore-key-drop",
         "map": "eastern-palace",
         "name": "Eastern Palace - Dark Eyegore Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x133,
+        "bit": 2
     },
     {
         "id": "eastern-palace-dark-square-pot-key",
         "map": "eastern-palace",
         "name": "Eastern Palace - Dark Square Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x175,
+        "bit": 2
     },
     {
         "id": "eastern-palace-map-chest",
         "map": "eastern-palace",
         "name": "Eastern Palace - Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x154,
+        "bit": 4
     },
 
-    // Deset Palace
+    // Desert Palace
     {
         "id": "desert-palace-beamos-hall-pot-key",
         "map": "desert-palace",
