@@ -1,12 +1,4 @@
-function to_snake_case(value)
-{
-    return value.toLowerCase()
-        .replaceAll(/\s/g, "-") // Replace all whitespace with dashes
-        .replaceAll(/[^a-z0-9-]/g, "") // Remove all non-alphanumeric characters (preserve dashes)
-        .replaceAll(/-+/g, "-") // Replace all repeated dashes with a single one
-        .replaceAll(/^-+/g, "") // Remove any dashes at the start of the string
-        .replaceAll(/-+$/g, "") // Remove any dashes at the end of the string
-}
+import { to_snake_case } from "./util.js"
 
 function draw_location_box(location, svg)
 {

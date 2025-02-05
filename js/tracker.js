@@ -1,4 +1,6 @@
 import map_view from "./map_view.js"
+import { to_snake_case } from "./util.js"
+
 
 export default class Tracker
 {
@@ -168,6 +170,7 @@ export default class Tracker
         const state = await this.plugin.read_state()
         this.update_inventory(state.inventory)
         this.update_checks(state.checks)
+        this.update_map(state.checks)
     }
 
     update_inventory(inventory)
@@ -180,5 +183,43 @@ export default class Tracker
     {
         for(var check of checks)
             document.querySelector(`#check-${check.id}-value`).textContent = check.value ? "Yes" : "No";
+    }
+
+    update_map(checks)
+    {
+        const map_svg = document.querySelector("#map-svg")
+        const maps = this.plugin.get_maps();
+
+        for(const location of maps["lightworld"].locations)
+        {
+            var check_count = 0;
+            const location_id = to_snake_case(location.name);
+
+            if(location.checks != null)
+            {
+                for(const c of location.checks)
+                {
+                    const check_val = checks.find(check => check.id == c)
+                    if(check_val != null && check_val.value)
+                    {
+                        check_count += 1;
+                    }
+                }
+
+                const location_box = map_svg.querySelector(`#location-box-${location_id}`);
+                const rect = location_box.querySelector("rect");
+                const text_path = location_box.querySelector("textPath");
+                
+                if(text_path != null)
+                {
+                    text_path.textContent = `${check_count}/${location.count}`;
+                }
+
+                if(check_count == location.count)
+                {
+                    rect.setAttribute("fill", "rgba(127, 127, 127, 0.75)")
+                }
+            }
+        }
     }
 }
