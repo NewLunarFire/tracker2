@@ -97,12 +97,12 @@ export default class Alttp {
         for(var item of inventory)
         {
             const mem_value = memory[item.offset + 0x340]
-            var inventory_value;
+            let inventory_value = null;
 
             if(item.type == "state")
-                inventory_value = item.states[mem_value];
+                inventory_value = mem_value;
             else if(item.type == "boolean")
-                inventory_value = (mem_value != 0 ? "Yes" : "No");
+                inventory_value = !!mem_value;
             else if(item.type == "count")
                 inventory_value = mem_value;
             else if(item.type == "rupee-count")
@@ -110,6 +110,7 @@ export default class Alttp {
 
             inventory_state.push({
                 id: item.id,
+                type: item.type,
                 value: inventory_value
             });
         }

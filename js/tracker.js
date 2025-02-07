@@ -1,6 +1,6 @@
 import map_view from "./map_view.js"
 import { to_snake_case } from "./util.js"
-
+import { InventoryView } from "./views/inventory.js"
 
 export default class Tracker
 {
@@ -12,44 +12,17 @@ export default class Tracker
         this.attach = this.attach.bind(this);
         this.connect = this.connect.bind(this);
         this.update = this.update.bind(this);
+        this.views = {
+            inventory: new InventoryView(document.querySelector("#inventory-sprite-container"))
+        }
     }
 
     init_layout()
     {
-        this.#display_inventory();
         this.#display_checks();
         this.#display_map();
-    }
 
-    #display_inventory()
-    {
-        var inventory_container = document.querySelector("#inventory-container");
-
-        for(var item of this.plugin.get_inventory())
-        {
-            const p = document.createElement('p');
-            const title = document.createElement('span');
-            
-            title.id = `inventory-${item.id}-title`;
-            title.textContent = item.name;
-
-            const value = document.createElement('span');
-            
-            value.id = `inventory-${item.id}-value`;
-
-            if(item.type == "state")
-                value.textContent = item.states[0];
-            else if(item.type == "boolean")
-                value.textContent = "No";
-            else if(item.type == "count")
-                value.textContent = "0";
-
-            p.appendChild(title);
-            p.appendChild(document.createTextNode(": "));
-            p.appendChild(value);
-
-            inventory_container.appendChild(p);
-        }
+        this.views.inventory.init(this.plugin.get_inventory());
     }
 
     #display_checks()
@@ -168,15 +141,9 @@ export default class Tracker
     async update()
     {
         const state = await this.plugin.read_state()
-        this.update_inventory(state.inventory)
         this.update_checks(state.checks)
         this.update_map(state.checks)
-    }
-
-    update_inventory(inventory)
-    {
-        for(var item of inventory)
-            document.querySelector(`#inventory-${item.id}-value`).textContent = item.value;
+        this.views.inventory.update(state.inventory);
     }
 
     update_checks(checks)
