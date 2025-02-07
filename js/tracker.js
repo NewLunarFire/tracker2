@@ -1,6 +1,6 @@
-import map_view from "./map_view.js"
-import { to_snake_case } from "./util.js"
+import { ChecksView } from "./views/checks.js";
 import { InventoryView } from "./views/inventory.js"
+import { MapView } from "./views/map.js"
 
 export default class Tracker
 {
@@ -13,65 +13,20 @@ export default class Tracker
         this.connect = this.connect.bind(this);
         this.update = this.update.bind(this);
         this.views = {
-            inventory: new InventoryView(document.querySelector("#inventory-sprite-container"))
+            inventory: new InventoryView(document.querySelector("#inventory-sprite-container")),
+            map: new MapView(document.querySelector("#map-svg")),
+            checks: new ChecksView(document.querySelector("#checks-container"))
         }
     }
 
     init_layout()
     {
-        this.#display_checks();
-        this.#display_map();
-
-        this.views.inventory.init(this.plugin.get_inventory());
-    }
-
-    #display_checks()
-    {
-        var checks_container = document.querySelector("#checks-container");
-
-        var checks = this.plugin.get_checks()
-        var checks_by_map = Object.groupBy(checks, check => check.map);
-
-        for(var map in checks_by_map)
-        {
-            const details = document.createElement("details");
-            const summary = document.createElement("summary");
-            summary.textContent = map;
-            details.appendChild(summary);
-            
-            for(var check of checks_by_map[map])
-            {
-                const p = document.createElement('p');
-                const title = document.createElement('span');
-                
-                title.id = `check-${check.id}-title`;
-                title.textContent = check.name;
-
-                const value = document.createElement('span');
-                
-                value.id = `check-${check.id}-value`;
-                value.textContent = "No";
-
-                p.appendChild(title);
-                p.appendChild(document.createTextNode(": "));
-                p.appendChild(value);
-
-                details.appendChild(p);
-            }
-
-            checks_container.appendChild(details);
-        }
-    }
-
-    #display_map()
-    {
-        const map_svg = document.querySelector("#map-svg")
         const maps = this.plugin.get_maps();
+        const checks = this.plugin.get_checks();
 
-        for(const location of maps["lightworld"].locations)
-        {
-            map_view.draw_location_box(location, map_svg);
-        }
+        this.views.checks.init(maps, checks);
+        this.views.map.init(maps);
+        this.views.inventory.init(this.plugin.get_inventory());
     }
 
     disconnect()
@@ -141,52 +96,8 @@ export default class Tracker
     async update()
     {
         const state = await this.plugin.read_state()
-        this.update_checks(state.checks)
-        this.update_map(state.checks)
+        this.views.checks.update(state.checks);
+        this.views.map.update(state.checks);
         this.views.inventory.update(state.inventory);
-    }
-
-    update_checks(checks)
-    {
-        for(var check of checks)
-            document.querySelector(`#check-${check.id}-value`).textContent = check.value ? "Yes" : "No";
-    }
-
-    update_map(checks)
-    {
-        const map_svg = document.querySelector("#map-svg")
-        const maps = this.plugin.get_maps();
-
-        for(const location of maps["lightworld"].locations)
-        {
-            var check_count = 0;
-            const location_id = to_snake_case(location.name);
-
-            if(location.checks != null)
-            {
-                for(const c of location.checks)
-                {
-                    const check_val = checks.find(check => check.id == c)
-                    if(check_val != null && check_val.value)
-                    {
-                        check_count += 1;
-                    }
-                }
-
-                const location_box = map_svg.querySelector(`#location-box-${location_id}`);
-                const rect = location_box.querySelector("rect");
-                const text_path = location_box.querySelector("textPath");
-                
-                if(text_path != null)
-                {
-                    text_path.textContent = `${check_count}/${location.count}`;
-                }
-
-                if(check_count == location.count)
-                {
-                    rect.setAttribute("fill", "rgba(127, 127, 127, 0.75)")
-                }
-            }
-        }
     }
 }
