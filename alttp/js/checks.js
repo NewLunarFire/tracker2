@@ -11,8 +11,8 @@ export default [
         "id": "blacksmith",
         "name": "Blacksmith",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x411,
+        "bit": 2
     },
     {
         "id": "blind-hideout-far-left",
@@ -53,8 +53,8 @@ export default [
         "id": "bombos-tablet",
         "name": "Bombos Tablet",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x411,
+        "bit": 1
     },
     {
         "id": "bonk-rock-cave",
@@ -74,15 +74,15 @@ export default [
         "id": "cave-45",
         "name": "Cave 45",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x237,
+        "bit": 2
     },
     {
         "id": "checkerboard-cave",
         "name": "Checkerboard Cave",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x24D,
+        "bit": 1
     },
     {
         "id": "chicken-house",
@@ -95,22 +95,22 @@ export default [
         "id": "desert-ledge",
         "name": "Desert Ledge",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x2B0,
+        "bit": 6
     },
     {
         "id": "ether-tablet",
         "name": "Ether Tablet",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x411,
+        "bit": 1
     },
     {
         "id": "floating-island",
         "name": "Floating Island",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x285,
+        "bit": 6
     },
     {
         "id": "floodgate-chest",
@@ -130,8 +130,8 @@ export default [
         "id": "graveyard-cave",
         "name": "Graveyard Cave",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x237,
+        "bit": 1
     },
     {
         "id": "hobo",
@@ -200,22 +200,22 @@ export default [
         "id": "king-tomb",
         "name": "King's Tomb",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x226,
+        "bit": 4
     },
     {
         "id": "lake-hylia-island",
         "name": "Lake Hylia Island",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x2B5,
+        "bit": 6
     },
     {
         "id": "library",
         "name": "Library",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x410,
+        "bit": 7
     },
     {
         "id": "link-house",
@@ -242,22 +242,22 @@ export default [
         "id": "lumberjack-tree",
         "name": "Lumberjack Tree",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1C5,
+        "bit": 1
     },
     {
         "id": "magic-bat",
         "name": "Magic Bat",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x411,
+        "bit": 7
     },
     {
         "id": "master-sword-pedestal",
         "name": "Master Sword Pedestal",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x300,
+        "bit": 6
     },
     {
         "id": "maze-race",
@@ -270,8 +270,8 @@ export default [
         "id": "mimic-cave",
         "name": "Mimic Cave",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x218,
+        "bit": 4
     },
     {
         "id": "mini-moldorm-cave-far-left",
@@ -382,15 +382,15 @@ export default [
         "id": "purple-chest",
         "name": "Purple Chest",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x3C9,
+        "bit": 4
     },
     {
         "id": "sahasrahla",
         "name": "Sahasrahla",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x410,
+        "bit": 4
     },
     {
         "id": "sahasrahla-hut-left",
@@ -461,15 +461,15 @@ export default [
         "id": "spectacle-rock",
         "name": "Spectacle Rock",
         "map": "lightworld",
-        "offset": 0x1D5,
-        "bit": 2
+        "offset": 0x283,
+        "bit": 6
     },
     {
         "id": "spectacle-rock-cave",
         "name": "Spectacle Rock Cave",
         "map": "lightworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1D5,
+        "bit": 2
     },
     {
         "id": "spiral-cave",
@@ -519,8 +519,8 @@ export default [
         "id": "bumper-cave-ledge",
         "name": "Bumper Cave Ledge",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x2CA,
+        "bit": 6
     },
     {
         "id": "c-shaped-house",
@@ -533,8 +533,8 @@ export default [
         "id": "catfish",
         "name": "Catfish",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x410,
+        "bit": 5
     },
     {
         "id": "chest-game",
@@ -554,29 +554,29 @@ export default [
         "id": "hookshot-cave-bottom-left",
         "name": "Hookshot Cave - Bottom Left",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x078,
+        "bit": 6
     },
     {
         "id": "hookshot-cave-bottom-right",
         "name": "Hookshot Cave - Bottom Right",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x078,
+        "bit": 7
     },
     {
         "id": "hookshot-cave-top-left",
         "name": "Hookshot Cave - Top Left",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x078,
+        "bit": 5
     },
     {
         "id": "hookshot-cave-top-right",
         "name": "Hookshot Cave - Top Right",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x078,
+        "bit": 4
     },
     {
         "id": "hype-cave-bottom",
@@ -617,22 +617,22 @@ export default [
         "id": "mire-shed-left",
         "name": "Mire Shed - Left",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x21A,
+        "bit": 4
     },
     {
         "id": "mire-shed-right",
         "name": "Mire Shed - Right",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x21A,
+        "bit": 5
     },
     {
         "id": "peg-cave",
         "name": "Peg Cave",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x24F,
+        "bit": 2
     },
     {
         "id": "pyramid",
@@ -645,22 +645,22 @@ export default [
         "id": "pyramid-fairy-left",
         "name": "Pyramid Fairy - Left",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x22C,
+        "bit": 4
     },
     {
         "id": "pyramid-fairy-right",
         "name": "Pyramid Fairy - Right",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x22C,
+        "bit": 5
     },
     {
         "id": "spike-cave",
         "name": "Spike Cave",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x22E,
+        "bit": 4
     },
     {
         "id": "stumpy",
@@ -673,15 +673,15 @@ export default [
         "id": "superbunny-cave-bottom",
         "name": "Superbunny Cave - Bottom",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1F0,
+        "bit": 5
     },
     {
         "id": "superbunny-cave-top",
         "name": "Superbunny Cave - Top",
         "map": "darkworld",
-        "offset": null,
-        "bit": null
+        "offset": 0x1F0,
+        "bit": 4
     },
 
     // Hyrule Castle
@@ -786,7 +786,7 @@ export default [
         "id": "eastern-palace-big-chest",
         "map": "eastern-palace",
         "name": "Big Chest",
-        "offset": 152,
+        "offset": 0x152,
         "bit": 4
     },
     {
@@ -844,64 +844,64 @@ export default [
         "id": "desert-palace-beamos-hall-pot-key",
         "map": "desert-palace",
         "name": "Beamos Hall Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x024,
+        "bit": 2
     },
     {
         "id": "desert-palace-big-chest",
         "map": "desert-palace",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0E6,
+        "bit": 4
     },
     {
         "id": "desert-palace-big-key-chest",
         "map": "desert-palace",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0EA,
+        "bit": 4
     },
     {
         "id": "desert-palace-boss",
         "map": "desert-palace",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x067,
+        "bit": 3
     },
     {
         "id": "desert-palace-compass-chest",
         "map": "desert-palace",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x10A,
+        "bit": 4
     },
     {
         "id": "desert-palace-desert-tiles-1-pot-key",
         "map": "desert-palace",
         "name": "Desert Tiles 1 Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x0C7,
+        "bit": 2
     },
     {
         "id": "desert-palace-desert-tiles-2-pot-key",
         "map": "desert-palace",
         "name": "Desert Tiles 2 Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x087,
+        "bit": 2
     },
     {
         "id": "desert-palace-map-chest",
         "map": "desert-palace",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0E8,
+        "bit": 4
     },
     {
         "id": "desert-palace-torch",
         "map": "desert-palace",
         "name": "Torch",
-        "offset": null,
-        "bit": null
+        "offset": 0x0E7,
+        "bit": 2
     },
 
     // Tower of Hera
@@ -909,43 +909,43 @@ export default [
         "id": "tower-of-hera-basement-cage",
         "map": "tower-hera",
         "name": "Basement Cage",
-        "offset": null,
-        "bit": null
+        "offset": 0x10F,
+        "bit": 2
     },
     {
         "id": "tower-of-hera-big-chest",
         "map": "tower-hera",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x04E,
+        "bit": 4
     },
     {
         "id": "tower-of-hera-big-key-chest",
         "map": "tower-hera",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x10E,
+        "bit": 4
     },
     {
         "id": "tower-of-hera-boss",
         "map": "tower-hera",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x00F,
+        "bit": 3
     },
     {
         "id": "tower-of-hera-compass-chest",
         "map": "tower-hera",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x04E,
+        "bit": 5
     },
     {
         "id": "tower-of-hera-map-chest",
         "map": "tower-hera",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0EE,
+        "bit": 4
     },
 
     // Palace of Darkness
@@ -953,99 +953,99 @@ export default [
         "id": "palace-of-darkness-big-chest",
         "map": "palace-darkness",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x034,
+        "bit": 4
     },
     {
         "id": "palace-of-darkness-big-key-chest",
         "map": "palace-darkness",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x074,
+        "bit": 4
     },
     {
         "id": "palace-of-darkness-boss",
         "map": "palace-darkness",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x0B5,
+        "bit": 3
     },
     {
         "id": "palace-of-darkness-compass-chest",
         "map": "palace-darkness",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x034,
+        "bit": 5
     },
     {
         "id": "palace-of-darkness-dark-basement-left",
         "map": "palace-darkness",
         "name": "Dark Basement - Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x0D4,
+        "bit": 4
     },
     {
         "id": "palace-of-darkness-dark-basement-right",
         "map": "palace-darkness",
         "name": "Dark Basement - Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x0D4,
+        "bit": 5
     },
     {
         "id": "palace-of-darkness-dark-maze-bottom",
         "map": "palace-darkness",
         "name": "Dark Maze - Bottom",
-        "offset": null,
-        "bit": null
+        "offset": 0x032,
+        "bit": 5
     },
     {
         "id": "palace-of-darkness-dark-maze-top",
         "map": "palace-darkness",
         "name": "Dark Maze - Top",
-        "offset": null,
-        "bit": null
+        "offset": 0x032,
+        "bit": 4
     },
     {
         "id": "palace-of-darkness-harmless-hellway",
         "map": "palace-darkness",
         "name": "Harmless Hellway",
-        "offset": null,
-        "bit": null
+        "offset": 0x034,
+        "bit": 6
     },
     {
         "id": "palace-of-darkness-map-chest",
         "map": "palace-darkness",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x56,
+        "bit": 4
     },
     {
         "id": "palace-of-darkness-shooter-room",
         "map": "palace-darkness",
         "name": "Shooter Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x12,
+        "bit": 4
     },
     {
         "id": "palace-of-darkness-stalfos-basement",
         "map": "palace-darkness",
         "name": "Stalfos Basement",
-        "offset": null,
-        "bit": null
+        "offset": 0x014,
+        "bit": 4
     },
     {
         "id": "palace-of-darkness-the-arena-bridge",
         "map": "palace-darkness",
         "name": "The Arena - Bridge",
-        "offset": null,
-        "bit": null
+        "offset": 0x54,
+        "bit": 5
     },
     {
         "id": "palace-of-darkness-the-arena-ledge",
         "map": "palace-darkness",
         "name": "The Arena - Ledge",
-        "offset": null,
-        "bit": null
+        "offset": 0x54,
+        "bit": 4
     },
 
     // Swamp Palace
@@ -1053,106 +1053,106 @@ export default [
         "id": "swamp-palace-big-chest",
         "map": "swamp-palace",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x06C,
+        "bit": 4
     },
     {
         "id": "swamp-palace-big-key-chest",
         "map": "swamp-palace",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x06A,
+        "bit": 1
     },
     {
         "id": "swamp-palace-boss",
         "map": "swamp-palace",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x00D,
+        "bit": 3
     },
     {
         "id": "swamp-palace-compass-chest",
         "map": "swamp-palace",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x08C,
+        "bit": 4
     },
     {
         "id": "swamp-palace-entrance",
         "map": "swamp-palace",
         "name": "Entrance",
-        "offset": null,
-        "bit": null
+        "offset": 0x050,
+        "bit": 4
     },
     {
         "id": "swamp-palace-flooded-room-left",
         "map": "swamp-palace",
         "name": "Flooded Room - Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x0EC,
+        "bit": 4
     },
     {
         "id": "swamp-palace-flooded-room-right",
         "map": "swamp-palace",
         "name": "Flooded Room - Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x0EC,
+        "bit": 5
     },
     {
         "id": "swamp-palace-hookshot-pot-key",
         "map": "swamp-palace",
         "name": "Hookshot Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x06D,
+        "bit": 2
     },
     {
         "id": "swamp-palace-map-chest",
         "map": "swamp-palace",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x06E,
+        "bit": 4
     },
     {
         "id": "swamp-palace-pot-row-pot-key",
         "map": "swamp-palace",
         "name": "Pot Row Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x071,
+        "bit": 2
     },
     {
         "id": "swamp-palace-trench-1-pot-key",
         "map": "swamp-palace",
         "name": "Trench 1 Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x06F,
+        "bit": 2
     },
     {
         "id": "swamp-palace-trench-2-pot-key",
         "map": "swamp-palace",
         "name": "Trench 2 Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x06B,
+        "bit": 2
     },
     {
         "id": "swamp-palace-waterfall-room",
         "map": "swamp-palace",
         "name": "Waterfall Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x0CC,
+        "bit": 4
     },
     {
         "id": "swamp-palace-waterway-pot-key",
         "map": "swamp-palace",
         "name": "Waterway Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x02D,
+        "bit": 2
     },
     {
         "id": "swamp-palace-west-chest",
         "map": "swamp-palace",
         "name": "West Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x068,
+        "bit": 4
     },
 
     // Thieves's Town
@@ -1160,71 +1160,71 @@ export default [
         "id": "thieves-town-ambush-chest",
         "map": "thieves-town",
         "name": "Ambush Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x196,
+        "bit": 4
     },
     {
         "id": "thieves-town-attic",
         "map": "thieves-town",
         "name": "Attic",
-        "offset": null,
-        "bit": null
+        "offset": 0x0CA,
+        "bit": 4
     },
     {
         "id": "thieves-town-big-chest",
         "map": "thieves-town",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x088,
+        "bit": 4
     },
     {
         "id": "thieves-town-big-key-chest",
         "map": "thieves-town",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x1B6,
+        "bit": 5
     },
     {
         "id": "thieves-town-blind-cell",
         "map": "thieves-town",
         "name": "Blind's Cell",
-        "offset": null,
-        "bit": null
+        "offset": 0x8A,
+        "bit": 4
     },
     {
         "id": "thieves-town-boss",
         "map": "thieves-town",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x159,
+        "bit": 3
     },
     {
         "id": "thieves-town-compass-chest",
         "map": "thieves-town",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x1B8,
+        "bit": 4
     },
     {
         "id": "thieves-town-hallway-pot-key",
         "map": "thieves-town",
         "name": "Hallway Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x179,
+        "bit": 2
     },
     {
         "id": "thieves-town-map-chest",
         "map": "thieves-town",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x1B6,
+        "bit": 4
     },
     {
         "id": "thieves-town-spike-switch-pot-key",
         "map": "thieves-town",
         "name": "Spike Switch Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x157,
+        "bit": 2
     },
 
     // Skull Woods
@@ -1232,71 +1232,71 @@ export default [
         "id": "skull-woods-big-chest",
         "map": "skull-woods",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0B0,
+        "bit": 4
     },
     {
         "id": "skull-woods-big-key-chest",
         "map": "skull-woods",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0xAE,
+        "bit": 1
     },
     {
         "id": "skull-woods-boss",
         "map": "skull-woods",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x053,
+        "bit": 3
     },
     {
         "id": "skull-woods-bridge-room",
         "map": "skull-woods",
         "name": "Bridge Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x0B2,
+        "bit": 4
     },
     {
         "id": "skull-woods-compass-chest",
         "map": "skull-woods",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0CE,
+        "bit": 4
     },
     {
         "id": "skull-woods-map-chest",
         "map": "skull-woods",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0xB0,
+        "bit": 5
     },
     {
         "id": "skull-woods-pinball-room",
         "map": "skull-woods",
         "name": "Pinball Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x0D0,
+        "bit": 4
     },
     {
         "id": "skull-woods-pot-prison",
         "map": "skull-woods",
         "name": "Pot Prison",
-        "offset": null,
-        "bit": null
+        "offset": 0x0AE,
+        "bit": 5
     },
     {
         "id": "skull-woods-spike-corner-key-drop",
         "map": "skull-woods",
         "name": "Spike Corner Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x073,
+        "bit": 2
     },
     {
         "id": "skull-woods-west-lobby-pot-key",
         "map": "skull-woods",
         "name": "West Lobby Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0xAD,
+        "bit": 2
     },
 
     // Ice Palace
@@ -1304,64 +1304,64 @@ export default [
         "id": "ice-palace-big-chest",
         "map": "ice-palace",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x13C,
+        "bit": 4
     },
     {
         "id": "ice-palace-big-key-chest",
         "map": "ice-palace",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x03E,
+        "bit": 4
     },
     {
         "id": "ice-palace-boss",
         "map": "ice-palace",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x1BD,
+        "bit": 3
     },
     {
         "id": "ice-palace-compass-chest",
         "map": "ice-palace",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x05C,
+        "bit": 4
     },
     {
         "id": "ice-palace-conveyor-key-drop",
         "map": "ice-palace",
         "name": "Conveyor Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x07D,
+        "bit": 2
     },
     {
         "id": "ice-palace-freezor-chest",
         "map": "ice-palace",
         "name": "Freezor Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x0FC,
+        "bit": 4
     },
     {
         "id": "ice-palace-hammer-block-key-drop",
         "map": "ice-palace",
         "name": "Hammer Block Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x07F,
+        "bit": 2
     },
     {
         "id": "ice-palace-iced-t-room",
         "map": "ice-palace",
         "name": "Iced T Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x15C,
+        "bit": 4
     },
     {
         "id": "ice-palace-jelly-key-drop",
         "map": "ice-palace",
         "name": "Jelly Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x03C,
+        "bit": 1
     },
     {
         "id": "ice-palace-many-pots-pot-key",
@@ -1374,15 +1374,15 @@ export default [
         "id": "ice-palace-map-chest",
         "map": "ice-palace",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x07E,
+        "bit": 4
     },
     {
         "id": "ice-palace-spike-room",
         "map": "ice-palace",
         "name": "Spike Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x0BE,
+        "bit": 4
     },
 
     // Misery Mire
@@ -1390,78 +1390,78 @@ export default [
         "id": "misery-mire-big-chest",
         "map": "misery-mire",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x186,
+        "bit": 4
     },
     {
         "id": "misery-mire-big-key-chest",
         "map": "misery-mire",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x1A2,
+        "bit": 4
     },
     {
         "id": "misery-mire-boss",
         "map": "misery-mire",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x121,
+        "bit": 3
     },
     {
         "id": "misery-mire-bridge-chest",
         "map": "misery-mire",
         "name": "Bridge Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x144,
+        "bit": 4
     },
     {
         "id": "misery-mire-compass-chest",
         "map": "misery-mire",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x182,
+        "bit": 4
     },
     {
         "id": "misery-mire-conveyor-crystal-key-drop",
         "map": "misery-mire",
         "name": "Conveyor Crystal Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x183,
+        "bit": 2
     },
     {
         "id": "misery-mire-fishbone-pot-key",
         "map": "misery-mire",
         "name": "Fishbone Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x143,
+        "bit": 2
     },
     {
         "id": "misery-mire-main-lobby",
         "map": "misery-mire",
         "name": "Main Lobby",
-        "offset": null,
-        "bit": null
+        "offset": 0x184,
+        "bit": 4
     },
     {
         "id": "misery-mire-map-chest",
         "map": "misery-mire",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x186,
+        "bit": 4
     },
     {
         "id": "misery-mire-spike-chest",
         "map": "misery-mire",
         "name": "Spike Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x166,
+        "bit": 4
     },
     {
         "id": "misery-mire-spikes-pot-key",
         "map": "misery-mire",
         "name": "Spikes Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x167,
+        "bit": 2
     },
 
     // Turtle Rock
@@ -1469,99 +1469,99 @@ export default [
         "id": "turtle-rock-big-chest",
         "map": "turtle-rock",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x048,
+        "bit": 4
     },
     {
         "id": "turtle-rock-big-key-chest",
         "map": "turtle-rock",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x028,
+        "bit": 4
     },
     {
         "id": "turtle-rock-boss",
         "map": "turtle-rock",
         "name": "Boss",
-        "offset": null,
-        "bit": null
+        "offset": 0x149,
+        "bit": 3
     },
     {
         "id": "turtle-rock-chain-chomps",
         "map": "turtle-rock",
         "name": "Chain Chomps",
-        "offset": null,
-        "bit": null
+        "offset": 0x16C,
+        "bit": 4
     },
     {
         "id": "turtle-rock-compass-chest",
         "map": "turtle-rock",
         "name": "Compass Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x1AC,
+        "bit": 4
     },
     {
         "id": "turtle-rock-crystaroller-room",
         "map": "turtle-rock",
         "name": "Crystaroller Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x008,
+        "bit": 4
     },
     {
         "id": "turtle-rock-eye-bridge-bottom-left",
         "map": "turtle-rock",
         "name": "Eye Bridge - Bottom Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x1AA,
+        "bit": 7
     },
     {
         "id": "turtle-rock-eye-bridge-bottom-right",
         "map": "turtle-rock",
         "name": "Eye Bridge - Bottom Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x1AA,
+        "bit": 6
     },
     {
         "id": "turtle-rock-eye-bridge-top-left",
         "map": "turtle-rock",
         "name": "Eye Bridge - Top Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x1AA,
+        "bit": 5
     },
     {
         "id": "turtle-rock-eye-bridge-top-right",
         "map": "turtle-rock",
         "name": "Eye Bridge - Top Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x1AA,
+        "bit": 4
     },
     {
         "id": "turtle-rock-pokey-1-key-drop",
         "map": "turtle-rock",
         "name": "Pokey 1 Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x16D,
+        "bit": 2
     },
     {
         "id": "turtle-rock-pokey-2-key-drop",
         "map": "turtle-rock",
         "name": "Pokey 2 Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x027,
+        "bit": 2
     },
     {
         "id": "turtle-rock-roller-room-left",
         "map": "turtle-rock",
         "name": "Roller Room - Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x16E,
+        "bit": 4
     },
     {
         "id": "turtle-rock-roller-room-right",
         "map": "turtle-rock",
         "name": "Roller Room - Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x16E,
+        "bit": 5
     },
 
     // Ganon's Tower
@@ -1569,219 +1569,217 @@ export default [
         "id": "ganon-tower-big-chest",
         "map": "ganon-tower",
         "name": "Big Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x118,
+        "bit": 4
     },
     {
         "id": "ganon-tower-big-key-chest",
         "map": "ganon-tower",
         "name": "Big Key Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x038,
+        "bit": 4
     },
     {
         "id": "ganon-tower-big-key-room-left",
         "map": "ganon-tower",
         "name": "Big Key Room - Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x038,
+        "bit": 5
     },
     {
         "id": "ganon-tower-big-key-room-right",
         "map": "ganon-tower",
         "name": "Big Key Room - Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x038,
+        "bit": 6
     },
     {
         "id": "ganon-tower-bob-chest",
         "map": "ganon-tower",
         "name": "Bob's Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x118,
+        "bit": 7
     },
     {
         "id": "ganon-tower-bob-torch",
         "map": "ganon-tower",
         "name": "Bob's Torch",
-        "offset": null,
-        "bit": null
+        "offset": 0x119,
+        "bit": 2
     },
     {
         "id": "ganon-tower-compass-room-bottom-left",
         "map": "ganon-tower",
         "name": "Compass Room - Bottom Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x13A,
+        "bit": 6
     },
     {
         "id": "ganon-tower-compass-room-bottom-right",
         "map": "ganon-tower",
         "name": "Compass Room - Bottom Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x13A,
+        "bit": 7
     },
     {
         "id": "ganon-tower-compass-room-top-left",
         "map": "ganon-tower",
         "name": "Compass Room - Top Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x13A,
+        "bit": 4
     },
     {
         "id": "ganon-tower-compass-room-top-right",
         "map": "ganon-tower",
         "name": "Compass Room - Top Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x13A,
+        "bit": 5
     },
     {
         "id": "ganon-tower-conveyor-cross-pot-key",
         "map": "ganon-tower",
         "name": "Conveyor Cross Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x117,
+        "bit": 2
     },
     {
         "id": "ganon-tower-conveyor-star-pits-pot-key",
         "map": "ganon-tower",
         "name": "Conveyor Star Pits Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F7,
+        "bit": 2
     },
     {
         "id": "ganon-tower-dms-room-bottom-left",
         "map": "ganon-tower",
         "name": "DMs Room - Bottom Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F6,
+        "bit": 6
     },
     {
         "id": "ganon-tower-dms-room-bottom-right",
         "map": "ganon-tower",
         "name": "DMs Room - Bottom Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F6,
+        "bit": 7
     },
     {
         "id": "ganon-tower-dms-room-top-left",
         "map": "ganon-tower",
         "name": "DMs Room - Top Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F6,
+        "bit": 4
     },
     {
         "id": "ganon-tower-dms-room-top-right",
         "map": "ganon-tower",
         "name": "DMs Room - Top Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F6,
+        "bit": 5
     },
     {
         "id": "ganon-tower-double-switch-pot-key",
         "map": "ganon-tower",
         "name": "Double Switch Pot Key",
-        "offset": null,
-        "bit": null
+        "offset": 0x137,
+        "bit": 2
     },
     {
         "id": "ganon-tower-firesnake-room",
         "map": "ganon-tower",
         "name": "Firesnake Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x0FA,
+        "bit": 4
     },
     {
         "id": "ganon-tower-hope-room-left",
         "map": "ganon-tower",
         "name": "Hope Room - Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x118,
+        "bit": 5
     },
     {
         "id": "ganon-tower-hope-room-right",
         "map": "ganon-tower",
         "name": "Hope Room - Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x118,
+        "bit": 6
     },
     {
         "id": "ganon-tower-map-chest",
         "map": "ganon-tower",
         "name": "Map Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x116,
+        "bit": 4
     },
     {
         "id": "ganon-tower-mini-helmasaur-key-drop",
         "map": "ganon-tower",
         "name": "Mini Helmasaur Key Drop",
-        "offset": null,
-        "bit": null
+        "offset": 0x07B,
+        "bit": 2
     },
     {
         "id": "ganon-tower-mini-helmasaur-room-left",
         "map": "ganon-tower",
         "name": "Mini Helmasaur Room - Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x07A,
+        "bit": 4
     },
     {
         "id": "ganon-tower-mini-helmasaur-room-right",
         "map": "ganon-tower",
         "name": "Mini Helmasaur Room - Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x07A,
+        "bit": 5
     },
     {
         "id": "ganon-tower-pre-moldorm-chest",
         "map": "ganon-tower",
         "name": "Pre-Moldorm Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x07A,
+        "bit": 6
     },
     {
         "id": "ganon-tower-randomizer-room-bottom-left",
         "map": "ganon-tower",
         "name": "Randomizer Room - Bottom Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F8,
+        "bit": 6
     },
     {
         "id": "ganon-tower-randomizer-room-bottom-right",
         "map": "ganon-tower",
         "name": "Randomizer Room - Bottom Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F8,
+        "bit": 7
     },
     {
         "id": "ganon-tower-randomizer-room-top-left",
         "map": "ganon-tower",
         "name": "Randomizer Room - Top Left",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F8,
+        "bit": 4
     },
     {
         "id": "ganon-tower-randomizer-room-top-right",
         "map": "ganon-tower",
         "name": "Randomizer Room - Top Right",
-        "offset": null,
-        "bit": null
+        "offset": 0x0F8,
+        "bit": 5
     },
     {
         "id": "ganon-tower-tile-room",
         "map": "ganon-tower",
         "name": "Tile Room",
-        "offset": null,
-        "bit": null
+        "offset": 0x11A,
+        "bit": 4
     },
     {
         "id": "ganon-tower-validation-chest",
         "map": "ganon-tower",
         "name": "Validation Chest",
-        "offset": null,
-        "bit": null
+        "offset": 0x09A,
+        "bit": 4
     }
-
-
 ];
