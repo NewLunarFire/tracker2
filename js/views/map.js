@@ -9,11 +9,18 @@ export class MapView {
     init(maps)
     {
         this.maps = maps;
-        for(const location of maps["lightworld"].locations)
-            this.#draw_location_box(location, this.container_node);
+        this.map0 = Object.keys(maps)[0];
+
+        const image = this.container_node.querySelector("image");
+        for(const location of maps[this.map0].locations)
+        {
+            const box = this.#draw_location_box(location, this.container_node);
+            this.container_node.appendChild(box);
+        }
+        
     }
 
-    #draw_location_box(location, svg)
+    #draw_location_box(location)
     {
         const id = to_snake_case(location.name);
 
@@ -62,12 +69,12 @@ export class MapView {
             g.appendChild(text);
         }
 
-        svg.appendChild(g);
+        return g;
     }
 
     update(checks)
     {
-        for(const location of this.maps["lightworld"].locations)
+        for(const location of this.maps[this.map0].locations)
         {
             var check_count = 0;
             const location_id = to_snake_case(location.name);
