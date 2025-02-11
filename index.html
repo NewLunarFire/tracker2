@@ -6,38 +6,37 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Tracker2</h1>
+        <div class="container-fluid">
+            <fieldset container="connection-frame">
+                <legend>(Q)USB2SNES</legend>
+                <button id="connect" onClick="connect()">Connect</button>
 
-        <fieldset>
-            <legend>(Q)USB2SNES</legend>
-            <button id="connect" onClick="connect()">Connect</button>
+                <label for="device-select">Device select:</label>
 
-            <label for="device-select">Device select:</label>
+                <select name="device" id="device-select" disabled="true">
+                    <option>No device available</option>
+                </select>
 
-            <select name="device" id="device-select" disabled="true">
-                <option>No device available</option>
-            </select>
-
-            <button id="device-attach-button" onclick="device_attach()" disabled="true">Attach</button>
+                <button id="device-attach-button" onclick="device_attach()" disabled="true">Attach</button>
+                
+                <p>Device: <span id="device-info"></span></p>
+            </fieldset>
             
-            <p>Device: <span id="device-info"></span></p>
-        </fieldset>
-        
-        <div class="layout-grid-container">
-            <div>
-                <fieldset id="inventory-container">
-                    <legend>Inventory</legend>
-                    <div class="inventory-sprite-container" id="inventory-sprite-container"></div>
-                </fieldset>
-            </div>
-            <div class="stack-container">
-                <svg width="1000" height="1000" class="stack-overlay" id="map-svg"></svg>
-                <img class="stack-bg" src="alttp/img/lightworld.png"/>
-            </div>
-            <div>
-                <fieldset id="checks-container">
-                    <legend>Checks</legend>
-                </fieldset>
+            <div class="layout-grid-container">
+                <div>
+                    <fieldset id="inventory-container">
+                        <legend>Inventory</legend>
+                        <div class="inventory-sprite-container" id="inventory-sprite-container"></div>
+                    </fieldset>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000" class="map-view" id="map-svg" onClick="save_cursor">
+                    <image href="alttp/img/lightworld.png" />
+                </svg>
+                <div class="checks-frame">
+                    <fieldset id="checks-container">
+                        <legend>Checks</legend>
+                    </fieldset>
+                </div>
             </div>
         </div>
 
@@ -54,6 +53,11 @@
             window.connect = tracker.connect;
             window.device_attach = tracker.attach;
             window.update = tracker.update;
+
+            document.querySelector("#map-svg").onclick = function(event)
+            {
+                console.log(`(${event.layerX}, ${event.layerY})`);
+            }
         </script>
     </body>
 </html>
