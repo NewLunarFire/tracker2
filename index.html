@@ -26,7 +26,11 @@
                 <div>
                     <fieldset id="inventory-container">
                         <legend>Inventory</legend>
+                        <div class="inventory-resource-container" id="inventory-resource-container"></div>
                         <div class="inventory-sprite-container" id="inventory-sprite-container"></div>
+                    </fieldset>
+                    <fieldset id="logic-container">
+                        <legend>Logic</legend>
                     </fieldset>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000" class="map-view" id="map-svg" onClick="save_cursor">
@@ -41,7 +45,7 @@
         </div>
 
         <script type="module">
-            import { Usb2Snes } from "./js/usb2snes.js"
+            import { Usb2Snes } from "./js/connectors/usb2snes.js"
             import Alttp from "./alttp/js/main.js"
             import Tracker from "./js/tracker.js"
 
@@ -57,6 +61,11 @@
             document.querySelector("#map-svg").onclick = function(event)
             {
                 console.log(`(${event.layerX}, ${event.layerY})`);
+            }
+
+            function save_cursor(e)
+            {
+                console.log(`(${e.targetX},${e.targetY})`);
             }
         </script>
     </body>

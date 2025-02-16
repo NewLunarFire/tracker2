@@ -11,13 +11,11 @@ export class MapView {
         this.maps = maps;
         this.map0 = Object.keys(maps)[0];
 
-        const image = this.container_node.querySelector("image");
         for(const location of maps[this.map0].locations)
         {
             const box = this.#draw_location_box(location, this.container_node);
             this.container_node.appendChild(box);
-        }
-        
+        } 
     }
 
     #draw_location_box(location)

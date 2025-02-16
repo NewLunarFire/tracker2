@@ -1,6 +1,7 @@
 import checks from "./checks.js"
 import inventory from "./inventory.js";
 import maps from "./maps.js"
+import logic from "./logic.js"
 
 function hex(input, len)
 {
@@ -17,6 +18,7 @@ export default class Alttp {
     {
         this.snes = snes;
         this.previous_memory = null;
+        this.inventory = []
     }
     
     get_checks()
@@ -24,9 +26,14 @@ export default class Alttp {
         return checks;
     }
 
+    get_resources()
+    {
+        return inventory.resources;
+    }
+
     get_inventory()
     {
-        return inventory;
+        return inventory.inventory;
     }
 
     get_maps()
@@ -84,9 +91,12 @@ export default class Alttp {
 
         this.previous_memory = memory;
 
+        this.inventory = this.#update_inventory(memory);
+
         return {
-            inventory: this.#update_inventory(memory),
-            checks: this.#update_checks(memory)
+            inventory: this.inventory,
+            checks: this.#update_checks(memory),
+            resources: this.#update_resources(memory)
         };
     }
 
@@ -94,7 +104,7 @@ export default class Alttp {
     {
         const inventory_state = [];
 
-        for(var item of inventory)
+        for(var item of inventory.inventory)
         {
             const mem_value = memory[item.offset + 0x340]
             let inventory_value = null;
@@ -103,10 +113,7 @@ export default class Alttp {
                 inventory_value = mem_value;
             else if(item.type == "boolean")
                 inventory_value = !!mem_value;
-            else if(item.type == "count")
-                inventory_value = mem_value;
-            else if(item.type == "rupee-count")
-                inventory_value = (memory[item.offset + 0x341] << 8) + mem_value
+            
 
             inventory_state.push({
                 id: item.id,
@@ -116,6 +123,23 @@ export default class Alttp {
         }
 
         return inventory_state;
+    }
+
+    #update_resources(memory)
+    {
+        const resources_state = []
+        for(var resource of inventory.resources)
+        {
+            let count = 0;
+            if(resource.size == 1)
+                count = memory[resource.offset + 0x340];
+            else if(resource.size == 2)
+                count = (memory[resource.offset + 0x341] << 8) + memory[resource.offset + 0x340]
+
+            resources_state.push({id: resource.id, count});
+        }
+
+        return resources_state;
     }
 
     #update_checks(memory)

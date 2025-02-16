@@ -55,6 +55,16 @@ p {
     max-height: calc(100vh - 130px);
 }
 
+.inventory-resource-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inventory-resource-container > div > img {
+    width: 32px;
+    height: 32px;
+}
+
 .inventory-sprite-container {
     display: flex;
     flex-wrap: wrap;

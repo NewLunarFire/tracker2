@@ -1,6 +1,9 @@
 import { ChecksView } from "./views/checks.js";
 import { InventoryView } from "./views/inventory.js"
 import { MapView } from "./views/map.js"
+import InventoryState from "./state/inventory.js";
+import CheckStore from "./state/checks.js";
+import LogicController from "./logic.js";
 
 export default class Tracker
 {
@@ -12,21 +15,33 @@ export default class Tracker
         this.attach = this.attach.bind(this);
         this.connect = this.connect.bind(this);
         this.update = this.update.bind(this);
-        this.views = {
-            inventory: new InventoryView(document.querySelector("#inventory-sprite-container")),
-            map: new MapView(document.querySelector("#map-svg")),
-            checks: new ChecksView(document.querySelector("#checks-container"))
+        this.stores = {
+            checks: new CheckStore(),
+            inventory: new InventoryState()
         }
+        this.views = {
+            inventory: new InventoryView(document.querySelector("#inventory-container"), this.stores.inventory),
+            map: new MapView(document.querySelector("#map-svg")),
+            checks: new ChecksView(document.querySelector("#checks-container"), this.stores.checks)
+        }
+        this.logic = new LogicController(this.stores.checks, this.stores.inventory);
     }
 
     init_layout()
     {
         const maps = this.plugin.get_maps();
-        const checks = this.plugin.get_checks();
-
-        this.views.checks.init(maps, checks);
+        
+        this.views.checks.init(maps);
         this.views.map.init(maps);
-        this.views.inventory.init(this.plugin.get_inventory());
+
+        for(var check of this.plugin.get_checks())
+            this.stores.checks.add_check(check);
+
+        for(var item of this.plugin.get_inventory())
+            this.stores.inventory.add_item(item);
+
+        for(var resource of this.plugin.get_resources())
+            this.stores.inventory.add_resource(resource);
     }
 
     disconnect()
@@ -95,9 +110,17 @@ export default class Tracker
 
     async update()
     {
-        const state = await this.plugin.read_state()
-        this.views.checks.update(state.checks);
+        const state = await this.plugin.read_state();
+
         this.views.map.update(state.checks);
-        this.views.inventory.update(state.inventory);
+
+        for(var item of state.inventory)
+            this.stores.inventory.set_state(item.id, item.value);
+
+        for(var resource of state.resources)
+            this.stores.inventory.update_resource_count(resource.id, resource.count);
+
+        for(let check of state.checks)
+            this.stores.checks.set_is_checked(check.id, check.value);
     }
 }

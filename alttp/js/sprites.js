@@ -224,6 +224,11 @@ export default {
         x: 64,
         y: 496
     },
+    "arrow": {
+        sheet: "alttp/img/sprites-items.png",
+        x: 209,
+        y: 66
+    },
     "shade": function(sprite) {
         return Object.assign({"shade": true}, sprite);
     }
